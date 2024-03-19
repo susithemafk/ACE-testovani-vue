@@ -26,7 +26,10 @@
 
         /* Any */
         "noImplicitAny": false,
-        "allowJs": true
+        "allowJs": true,
+
+        /* Types */
+        "types": ["cypress"]
     },
     "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
     "references": [{ "path": "./tsconfig.node.json" }]

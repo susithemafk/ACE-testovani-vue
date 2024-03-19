@@ -1,4 +1,5 @@
 <script setup>
+import Button from "primevue/button"
 import { ref } from "vue"
 
 const props = defineProps({
@@ -7,10 +8,17 @@ const props = defineProps({
         default: "Text",
     },
 })
+
+const isVisible = ref(true)
+
+const toggleVisibility = () => {
+    isVisible.value = !isVisible.value
+}
 </script>
 
 <template>
-    <p class="text" id="text">
+    <Button @click="toggleVisibility">{{ isVisible ? "Hide" : "Show" }}</Button>
+    <p v-if="isVisible" class="text" id="text">
         {{ props.initialText }}
     </p>
 </template>

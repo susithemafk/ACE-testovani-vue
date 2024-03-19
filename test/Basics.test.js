@@ -62,6 +62,22 @@ describe("Find element", () => {
         const element = wrapper.find("#text")
         expect(element.text()).toBe("Hello world")
     })
+
+    it("Check text with props after hiding it", async () => {
+        const wrapper = mount(Paragraph, {
+            props: {
+                initialText: "Hello world",
+            },
+        })
+        let paragraph, button
+        paragraph = wrapper.find("#text")
+        button = wrapper.find("button")
+
+        await button.trigger("click")
+
+        paragraph = wrapper.find("#text")
+        expect(paragraph.exists()).toBeFalsy()
+    })
 })
 
 // hledání komponent
@@ -191,5 +207,3 @@ describe("Math", () => {
         expect(wrapper.vm.result).toBe(1)
     })
 })
-
-// triggers

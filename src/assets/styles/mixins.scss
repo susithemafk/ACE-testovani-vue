@@ -1,0 +1,10 @@
+@mixin mq-up($name) {
+    @media (min-width: $name) {
+        @content;
+    }
+}
+@mixin mq-down($name) {
+    @media (max-width: $name) {
+        @content;
+    }
+}

@@ -1,0 +1,12 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+}
+
+.container {
+  max-width: 960px !important;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

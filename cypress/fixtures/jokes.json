@@ -1,0 +1,62 @@
+[
+    {
+        "type": "general",
+        "setup": "What does a female snake use for support?",
+        "punchline": "A co-Bra!",
+        "id": 238
+    },
+    {
+        "type": "general",
+        "setup": "What’s brown and sounds like a bell?",
+        "punchline": "Dung!",
+        "id": 280
+    },
+    {
+        "type": "general",
+        "setup": "Why are skeletons so calm?",
+        "punchline": "Because nothing gets under their skin.",
+        "id": 310
+    },
+    {
+        "type": "general",
+        "setup": "What do you call an elephant that doesn’t matter?",
+        "punchline": "An irrelephant.",
+        "id": 223
+    },
+    {
+        "type": "programming",
+        "setup": "An IPv6 packet is walking out of the house.",
+        "punchline": "He goes nowhere.",
+        "id": 374
+    },
+    {
+        "type": "general",
+        "setup": "How did the hipster burn the roof of his mouth?",
+        "punchline": "He ate the pizza before it was cool.",
+        "id": 118
+    },
+    {
+        "type": "general",
+        "setup": "Did you hear the story about the cheese that saved the world?",
+        "punchline": "It was legend dairy.",
+        "id": 66
+    },
+    {
+        "type": "general",
+        "setup": "What do birds give out on Halloween?",
+        "punchline": "Tweets.",
+        "id": 189
+    },
+    {
+        "type": "general",
+        "setup": "Who did the wizard marry?",
+        "punchline": "His ghoul-friend",
+        "id": 301
+    },
+    {
+        "type": "general",
+        "setup": "What kind of magic do cows believe in?",
+        "punchline": "MOODOO.",
+        "id": 259
+    }
+]

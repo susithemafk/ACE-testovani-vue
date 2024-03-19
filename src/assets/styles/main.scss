@@ -1,0 +1,11 @@
+@import "./mixins.scss";
+@import "./vite.scss";
+
+body {
+}
+
+.container {
+    max-width: 960px !important;
+    margin: 0 auto;
+    padding: 2rem;
+}
