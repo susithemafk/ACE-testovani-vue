@@ -52,3 +52,14 @@ await wrapper.vm.$nextTick()
 
 nebo takto
 await wrapper.find("button").trigger("click")
+
+### Unit testování
+testuje části kódu, funkce, komponenty
+
+### Integration testování
+testuje jak spolu komunikují jednotlivé části kódu, komponenty
+tz. chci vidět jak se chová komponenta když se změní stav jiné komponenty
+
+### End to end testování
+testuje jak se chová aplikace jako celek, jak se chová když uživatel kliká na různé věci
+spouští se v simulovaném prohlížeči a interaguje s aplikací
