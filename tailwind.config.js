@@ -5,5 +5,7 @@ export default {
         extend: {},
     },
     plugins: [],
-    darkMode: true
+    darkMode: true,
+    mode: "jit",
+    purge: false,
 }

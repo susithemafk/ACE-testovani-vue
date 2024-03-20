@@ -1,14 +1,10 @@
 const { defineConfig } = require("cypress")
+const baseUrl = require("./cypress/support/cypressBaseUrl")
 
 module.exports = defineConfig({
     e2e: {
-        setupNodeEvents(on, config) {
-            // implement node event listeners here
-        },
-        baseUrl: "http://localhost:5173",
+        setupNodeEvents(on, config) {},
+        baseUrl: baseUrl,
         browser: "chrome",
-    },
-    env: {
-        VUE_APP_PORT: 5173,
     },
 })

@@ -17,28 +17,35 @@ const accordionClasses = "border-solid border rounded-lg mb-6"
     <div class="container">
         <h1 class="text-center mb-8">Testovací aplikace Vue + Jest + Cypress</h1>
 
-        <Accordion :active-index="0" :class="accordionClasses">
-            <AccordionTab header="Formulář">
-                <Form></Form>
-            </AccordionTab>
-        </Accordion>
+        <section id="unit" class="mb-24">
+            <h2 id="unit">Unit</h2>
+        </section>
 
-        <Accordion :active-index="0" :class="accordionClasses">
-            <AccordionTab header="API">
-                <Joke :fetchingUrl="'../../cypress/fixtures/jokes.json'" />
-            </AccordionTab>
-        </Accordion>
+        <section id="e2e" class="mb-24">
+            <h2>E2E</h2>
+            <Accordion :active-index="0" :class="accordionClasses">
+                <AccordionTab header="Formulář">
+                    <Form></Form>
+                </AccordionTab>
+            </Accordion>
 
-        <Accordion :active-index="0" :class="accordionClasses">
-            <AccordionTab header="Skrytí odstavce">
-                <Paragraph :initialText="'Toto je odstavec!'" />
-            </AccordionTab>
-        </Accordion>
+            <Accordion :active-index="0" :class="accordionClasses">
+                <AccordionTab header="API">
+                    <Joke :fetchingUrl="'../../cypress/fixtures/jokes.json'" />
+                </AccordionTab>
+            </Accordion>
 
-        <Accordion :active-index="0" :class="accordionClasses">
-            <AccordionTab header="Responzivita">
-                <Responsive />
-            </AccordionTab>
-        </Accordion>
+            <Accordion :active-index="0" :class="accordionClasses">
+                <AccordionTab header="Skrytí odstavce">
+                    <Paragraph :initialText="'Toto je odstavec!'" />
+                </AccordionTab>
+            </Accordion>
+
+            <Accordion :active-index="0" :class="accordionClasses">
+                <AccordionTab header="Responzivita">
+                    <Responsive />
+                </AccordionTab>
+            </Accordion>
+        </section>
     </div>
 </template>
