@@ -36,16 +36,7 @@
         "transform": {
             "^.+\\.js$": "babel-jest",
             "^.+\\.vue$": "@vue/vue3-jest"
-        },
-        "reporters": [
-            "default",
-            [
-                "jest-json-reporter",
-                {
-                    "outputFile": "test-results.json"
-                }
-            ]
-        ]
+        }
     },
     "devDependencies": {
         "@babel/plugin-transform-runtime": "^7.24.0",
