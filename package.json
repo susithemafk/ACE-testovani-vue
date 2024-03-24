@@ -6,7 +6,7 @@
         "dev": "vite --port 5173",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
-        "test:unit": "jest --verbose ./test",
+        "test:unit": "jest --verbose ./jest",
         "test:e2e": "cypress open",
         "test:e2e:run-all": "cypress run",
         "sass": "sass src/assets/styles/main.scss src/assets/styles/main.css",
@@ -19,24 +19,6 @@
         "plugins": [
             "@babel/plugin-transform-runtime"
         ]
-    },
-    "jest": {
-        "testEnvironment": "jsdom",
-        "testEnvironmentOptions": {
-            "customExportConditions": [
-                "node",
-                "node-addons"
-            ]
-        },
-        "moduleFileExtensions": [
-            "js",
-            "json",
-            "vue"
-        ],
-        "transform": {
-            "^.+\\.js$": "babel-jest",
-            "^.+\\.vue$": "@vue/vue3-jest"
-        }
     },
     "devDependencies": {
         "@babel/plugin-transform-runtime": "^7.24.0",
@@ -57,10 +39,15 @@
     "dependencies": {
         "@types/jest": "^29.5.12",
         "@vitejs/plugin-vue": "^5.0.4",
+        "highlight.js": "^11.9.0",
         "jest-environment-jsdom": "^29.7.0",
+        "marked": "^12.0.1",
+        "marked-highlight": "^2.1.1",
         "postcss-import": "^16.0.1",
         "primevue": "^3.50.0",
+        "prismjs": "^1.29.0",
         "sass": "^1.72.0",
-        "vue": "^3.4.21"
+        "vue": "^3.4.21",
+        "vue-prism-component": "^2.0.0"
     }
 }

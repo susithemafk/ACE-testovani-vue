@@ -9,3 +9,7 @@ body {
     margin: 0 auto;
     padding: 2rem;
 }
+
+.markdown-section {
+    @import "./markdown.scss";
+}

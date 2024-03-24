@@ -100,6 +100,24 @@ describe("Find component", () => {
     })
     // findComponent vs getComponent
     // getComponent - throwne error, pokud nenajde komponentu
+
+    it("Check if child component emits", async () => {
+        const parent = mount(Parent)
+        const child = parent.getComponent({ name: "Child" })
+        await child.vm.$emit("childEvent", "emitting from child")
+        expect(child.emitted().childEvent[0][0]).toBe("emitting from child")
+        // console.log(child.emitted().childEvent[0][0])
+    })
+
+    // check if parent catches child event
+    it("Check if parent catches child event", async () => {
+        const parent = mount(Parent)
+        const child = parent.getComponent({ name: "Child" })
+        // console.log(parent.vm.dataFromChild)
+        await child.vm.$emit("childEvent", "emitting from child")
+        // console.log(parent.vm.dataFromChild)
+        expect(parent.vm.dataFromChild).toBe("emitting from child")
+    })
 })
 
 // testování props
@@ -143,9 +161,9 @@ describe("Inputs", () => {
 describe("Emitting", () => {
     it("When clicked, button emits 'valueChanged'", async () => {
         const wrapper = mount(Button)
-        console.log(wrapper.emitted())
+        // console.log(wrapper.emitted())
         wrapper.find("button").trigger("click")
-        console.log(wrapper.emitted())
+        // console.log(wrapper.emitted())
         /**
 		 * console.log
 			{ valueChanged: [ [ 'New value' ] ], testEmit: [ [ 123 ] ] }
@@ -156,9 +174,9 @@ describe("Emitting", () => {
 
     it("Custom named event call", () => {
         const wrapper = mount(Button)
-        console.log(wrapper.emitted())
+        // console.log(wrapper.emitted())
         wrapper.find(".btn").trigger("myevent")
-        console.log(wrapper.emitted())
+        // console.log(wrapper.emitted())
         expect(wrapper.emitted().test).toBeTruthy()
     })
 
